@@ -299,8 +299,9 @@ static NSString * const FORMTextFieldPlusButtonColorKey = @"plus_button_color";
 
     self.modified = YES;
     
-    // 日本語入力で文字が重複して入力されてしまう問題を回避するためコメントアウト
+    // 日本語入力で文字が重複して入力されてしまう問題を回避するため修正
     // self.rawText = self.text;
+    _rawText = self.text;
 
     if ([self.textFieldDelegate respondsToSelector:@selector(textFormField:didUpdateWithText:)]) {
         [self.textFieldDelegate textFormField:self
