@@ -135,8 +135,6 @@ static NSString * const FORMTextFieldPlusButtonColorKey = @"plus_button_color";
 }
 
 - (void)setRawText:(NSString *)rawText {
-    // 日本語入力で文字が重複して入力されてしまう問題を回避するためコメントアウト
-    /*
     BOOL shouldFormat = (self.formatter && (rawText.length >= _rawText.length ||
                                             ![rawText isEqualToString:_rawText]));
 
@@ -145,7 +143,7 @@ static NSString * const FORMTextFieldPlusButtonColorKey = @"plus_button_color";
     } else {
         self.text = rawText;
     }
-    */
+    
     _rawText = rawText;
 }
 
@@ -300,7 +298,9 @@ static NSString * const FORMTextFieldPlusButtonColorKey = @"plus_button_color";
     }
 
     self.modified = YES;
-    self.rawText = self.text;
+    
+    // 日本語入力で文字が重複して入力されてしまう問題を回避するためコメントアウト
+    // self.rawText = self.text;
 
     if ([self.textFieldDelegate respondsToSelector:@selector(textFormField:didUpdateWithText:)]) {
         [self.textFieldDelegate textFormField:self
