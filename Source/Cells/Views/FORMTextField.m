@@ -135,6 +135,8 @@ static NSString * const FORMTextFieldPlusButtonColorKey = @"plus_button_color";
 }
 
 - (void)setRawText:(NSString *)rawText {
+    // 日本語入力で文字が重複して入力されてしまう問題を回避するためコメントアウト
+    /*
     BOOL shouldFormat = (self.formatter && (rawText.length >= _rawText.length ||
                                             ![rawText isEqualToString:_rawText]));
 
@@ -143,7 +145,7 @@ static NSString * const FORMTextFieldPlusButtonColorKey = @"plus_button_color";
     } else {
         self.text = rawText;
     }
-
+    */
     _rawText = rawText;
 }
 
