@@ -1,4 +1,5 @@
-@import HYPMathParser.DDMathEvaluator;
+//@import HYPMathParser.DDMathEvaluator;
+#import "HYPMathParser/DDMathEvaluator.h"
 
 @interface DDMathEvaluator (FORM)
 
