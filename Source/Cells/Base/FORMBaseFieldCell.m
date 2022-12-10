@@ -39,7 +39,8 @@ static NSString * const FORMHeadingLabelTextColorKey = @"heading_label_text_colo
     if (_headingLabel) return _headingLabel;
 
     _headingLabel = [[UILabel alloc] initWithFrame:[self headingLabelFrame]];
-
+    _headingLabel.adjustsFontSizeToFitWidth = YES;
+    
     return _headingLabel;
 }
 
