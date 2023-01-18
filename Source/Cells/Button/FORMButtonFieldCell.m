@@ -36,6 +36,9 @@ static NSString * const FORMButtonBackgroundColorKey = @"background_color";
     if (_button) return _button;
 
     _button = [UIButton buttonWithType:UIButtonTypeCustom];
+    _button.titleLabel.numberOfLines = 0;
+    _button.titleLabel.lineBreakMode = NSLineBreakByWordWrapping;
+    _button.titleLabel.adjustsFontSizeToFitWidth = YES;
 
     [_button addTarget:self action:@selector(buttonAction) forControlEvents:UIControlEventTouchUpInside];
 
