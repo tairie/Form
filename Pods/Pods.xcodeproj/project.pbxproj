@@ -4056,12 +4056,19 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0930;
+				TargetAttributes = {
+					D830D422AF6CCDE2DBE6E7DE = {
+						DevelopmentTeam = 38FRDV89F6;
+						ProvisioningStyle = Automatic;
+					};
+				};
 			};
 			buildConfigurationList = 903BF9834F1A4A559976EF4B /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = C9ED4F0776A513C3F92FFFF6;
@@ -5425,7 +5432,7 @@
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = "Target Support Files/Pods-CocoaPods-Payment/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-CocoaPods-Payment/Pods-CocoaPods-Payment.modulemap";
@@ -5461,7 +5468,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/HYPNorwegianAccountNumber/HYPNorwegianAccountNumber-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/HYPNorwegianAccountNumber/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/HYPNorwegianAccountNumber/HYPNorwegianAccountNumber.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
@@ -5492,7 +5499,7 @@
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = "Target Support Files/Pods-CocoaPods-CustomField/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-CocoaPods-CustomField/Pods-CocoaPods-CustomField.modulemap";
@@ -5528,7 +5535,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/UIViewController-HYPKeyboardToolbar/UIViewController-HYPKeyboardToolbar-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/UIViewController-HYPKeyboardToolbar/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/UIViewController-HYPKeyboardToolbar/UIViewController-HYPKeyboardToolbar.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
@@ -5559,7 +5566,7 @@
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = "Target Support Files/Pods-CocoaPods-Basic-Swift/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-CocoaPods-Basic-Swift/Pods-CocoaPods-Basic-Swift.modulemap";
@@ -5595,7 +5602,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/HYP8601/HYP8601-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/HYP8601/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/HYP8601/HYP8601.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
@@ -5627,7 +5634,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/NSString-HYPContainsString/NSString-HYPContainsString-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/NSString-HYPContainsString/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/NSString-HYPContainsString/NSString-HYPContainsString.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
@@ -5659,7 +5666,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/HYPNorwegianAccountNumber/HYPNorwegianAccountNumber-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/HYPNorwegianAccountNumber/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/HYPNorwegianAccountNumber/HYPNorwegianAccountNumber.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
@@ -5677,14 +5684,19 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A7B7689C3024486D209296D0 /* Form.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Form";
+				DEVELOPMENT_TEAM = 38FRDV89F6;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = "Target Support Files/Form/ResourceBundle-Form-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				PRODUCT_NAME = Form;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = bundle;
 			};
@@ -5708,7 +5720,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/Form/Form-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/Form/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/Form/Form.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
@@ -5740,7 +5752,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/NSString-HYPWordExtractor/NSString-HYPWordExtractor-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/NSString-HYPWordExtractor/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/NSString-HYPWordExtractor/NSString-HYPWordExtractor.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
@@ -5772,7 +5784,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/NSDictionary-ANDYSafeValue/NSDictionary-ANDYSafeValue-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/NSDictionary-ANDYSafeValue/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/NSDictionary-ANDYSafeValue/NSDictionary-ANDYSafeValue.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
@@ -5803,7 +5815,7 @@
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = "Target Support Files/Pods-CocoaPods-Tests/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-CocoaPods-Tests/Pods-CocoaPods-Tests.modulemap";
@@ -5839,7 +5851,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/NSString-HYPFormula/NSString-HYPFormula-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/NSString-HYPFormula/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/NSString-HYPFormula/NSString-HYPFormula.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
@@ -5871,7 +5883,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/NSDictionary-HYPImmutable/NSDictionary-HYPImmutable-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/NSDictionary-HYPImmutable/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/NSDictionary-HYPImmutable/NSDictionary-HYPImmutable.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
@@ -5903,7 +5915,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/HYPMathParser/HYPMathParser-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/HYPMathParser/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/HYPMathParser/HYPMathParser.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
@@ -5935,7 +5947,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/NSJSONSerialization-ANDYJSONFile/NSJSONSerialization-ANDYJSONFile-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/NSJSONSerialization-ANDYJSONFile/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/NSJSONSerialization-ANDYJSONFile/NSJSONSerialization-ANDYJSONFile.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
@@ -5967,7 +5979,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/NSString-HYPRelationshipParser/NSString-HYPRelationshipParser-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/NSString-HYPRelationshipParser/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/NSString-HYPRelationshipParser/NSString-HYPRelationshipParser.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
@@ -5998,7 +6010,7 @@
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = "Target Support Files/Pods-CocoaPods-iPhone-Storyboard/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-CocoaPods-iPhone-Storyboard/Pods-CocoaPods-iPhone-Storyboard.modulemap";
@@ -6033,7 +6045,7 @@
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = "Target Support Files/Pods-CocoaPods-Basic-ObjC/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-CocoaPods-Basic-ObjC/Pods-CocoaPods-Basic-ObjC.modulemap";
@@ -6069,7 +6081,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/HYPImagePicker/HYPImagePicker-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/HYPImagePicker/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/HYPImagePicker/HYPImagePicker.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
@@ -6101,7 +6113,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/NSString-ZENInflections/NSString-ZENInflections-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/NSString-ZENInflections/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/NSString-ZENInflections/NSString-ZENInflections.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
@@ -6184,7 +6196,7 @@
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = "Target Support Files/Pods-CocoaPods-LoginDemo/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-CocoaPods-LoginDemo/Pods-CocoaPods-LoginDemo.modulemap";
@@ -6220,7 +6232,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/NSDictionary-HYPImmutable/NSDictionary-HYPImmutable-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/NSDictionary-HYPImmutable/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/NSDictionary-HYPImmutable/NSDictionary-HYPImmutable.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
@@ -6252,7 +6264,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/Form/Form-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/Form/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/Form/Form.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
@@ -6284,7 +6296,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/NSDate-HYPString/NSDate-HYPString-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/NSDate-HYPString/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/NSDate-HYPString/NSDate-HYPString.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
@@ -6316,7 +6328,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/NSString-HYPContainsString/NSString-HYPContainsString-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/NSString-HYPContainsString/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/NSString-HYPContainsString/NSString-HYPContainsString.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
@@ -6348,7 +6360,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/HYP8601/HYP8601-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/HYP8601/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/HYP8601/HYP8601.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
@@ -6380,7 +6392,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/HYPNorwegianSSN/HYPNorwegianSSN-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/HYPNorwegianSSN/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/HYPNorwegianSSN/HYPNorwegianSSN.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
@@ -6411,7 +6423,7 @@
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = "Target Support Files/Pods-CocoaPods-iPhone-Storyboard/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-CocoaPods-iPhone-Storyboard/Pods-CocoaPods-iPhone-Storyboard.modulemap";
@@ -6447,7 +6459,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/NSDictionary-ANDYSafeValue/NSDictionary-ANDYSafeValue-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/NSDictionary-ANDYSafeValue/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/NSDictionary-ANDYSafeValue/NSDictionary-ANDYSafeValue.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
@@ -6479,7 +6491,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/NSDictionary-HYPNestedAttributes/NSDictionary-HYPNestedAttributes-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/NSDictionary-HYPNestedAttributes/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/NSDictionary-HYPNestedAttributes/NSDictionary-HYPNestedAttributes.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
@@ -6511,7 +6523,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/NSJSONSerialization-ANDYJSONFile/NSJSONSerialization-ANDYJSONFile-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/NSJSONSerialization-ANDYJSONFile/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/NSJSONSerialization-ANDYJSONFile/NSJSONSerialization-ANDYJSONFile.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
@@ -6543,7 +6555,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/NSDate-HYPString/NSDate-HYPString-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/NSDate-HYPString/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/NSDate-HYPString/NSDate-HYPString.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
@@ -6574,7 +6586,7 @@
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = "Target Support Files/Pods-CocoaPods-LoginDemo/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-CocoaPods-LoginDemo/Pods-CocoaPods-LoginDemo.modulemap";
@@ -6610,7 +6622,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/NSObject-HYPTesting/NSObject-HYPTesting-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/NSObject-HYPTesting/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/NSObject-HYPTesting/NSObject-HYPTesting.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
@@ -6641,7 +6653,7 @@
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = "Target Support Files/Pods-CocoaPods-CustomField/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-CocoaPods-CustomField/Pods-CocoaPods-CustomField.modulemap";
@@ -6676,7 +6688,7 @@
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = "Target Support Files/Pods-CocoaPods-Payment/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-CocoaPods-Payment/Pods-CocoaPods-Payment.modulemap";
@@ -6712,7 +6724,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/NSString-ZENInflections/NSString-ZENInflections-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/NSString-ZENInflections/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/NSString-ZENInflections/NSString-ZENInflections.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
@@ -6744,7 +6756,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/NSDictionary-HYPNestedAttributes/NSDictionary-HYPNestedAttributes-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/NSDictionary-HYPNestedAttributes/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/NSDictionary-HYPNestedAttributes/NSDictionary-HYPNestedAttributes.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
@@ -6762,14 +6774,19 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A7B7689C3024486D209296D0 /* Form.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Form";
+				DEVELOPMENT_TEAM = 38FRDV89F6;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = "Target Support Files/Form/ResourceBundle-Form-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				PRODUCT_NAME = Form;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = bundle;
 			};
@@ -6793,7 +6810,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/HYPImagePicker/HYPImagePicker-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/HYPImagePicker/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/HYPImagePicker/HYPImagePicker.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
@@ -6824,7 +6841,7 @@
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = "Target Support Files/Pods-CocoaPods-ModalForm/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-CocoaPods-ModalForm/Pods-CocoaPods-ModalForm.modulemap";
@@ -6859,7 +6876,7 @@
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = "Target Support Files/Pods-CocoaPods-Tests/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-CocoaPods-Tests/Pods-CocoaPods-Tests.modulemap";
@@ -6895,7 +6912,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/HYPMathParser/HYPMathParser-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/HYPMathParser/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/HYPMathParser/HYPMathParser.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
@@ -6926,7 +6943,7 @@
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = "Target Support Files/Pods-CocoaPods-Basic-ObjC/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-CocoaPods-Basic-ObjC/Pods-CocoaPods-Basic-ObjC.modulemap";
@@ -6962,7 +6979,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/NSString-HYPFormula/NSString-HYPFormula-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/NSString-HYPFormula/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/NSString-HYPFormula/NSString-HYPFormula.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
@@ -6993,7 +7010,7 @@
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = "Target Support Files/Pods-CocoaPods-ModalForm/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-CocoaPods-ModalForm/Pods-CocoaPods-ModalForm.modulemap";
@@ -7029,7 +7046,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/NSObject-HYPTesting/NSObject-HYPTesting-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/NSObject-HYPTesting/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/NSObject-HYPTesting/NSObject-HYPTesting.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
@@ -7061,7 +7078,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/UIViewController-HYPKeyboardToolbar/UIViewController-HYPKeyboardToolbar-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/UIViewController-HYPKeyboardToolbar/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/UIViewController-HYPKeyboardToolbar/UIViewController-HYPKeyboardToolbar.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
@@ -7092,7 +7109,7 @@
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = "Target Support Files/Pods-CocoaPods-Basic-Swift/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-CocoaPods-Basic-Swift/Pods-CocoaPods-Basic-Swift.modulemap";
@@ -7184,7 +7201,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/NSString-HYPWordExtractor/NSString-HYPWordExtractor-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/NSString-HYPWordExtractor/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/NSString-HYPWordExtractor/NSString-HYPWordExtractor.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
@@ -7216,7 +7233,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/HYPNorwegianSSN/HYPNorwegianSSN-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/HYPNorwegianSSN/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/HYPNorwegianSSN/HYPNorwegianSSN.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
@@ -7248,7 +7265,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/NSString-HYPRelationshipParser/NSString-HYPRelationshipParser-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/NSString-HYPRelationshipParser/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/NSString-HYPRelationshipParser/NSString-HYPRelationshipParser.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
