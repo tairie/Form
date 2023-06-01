@@ -66,6 +66,8 @@ static NSString * const FORMFormatterSelector = @"formatString:reverse:";
     if (minimumDateString) {
         _minimumDate = [dateFormatter dateFromString:minimumDateString];
     }
+    
+    _showsInfoIcon = [[dictionary andy_valueForKey:@"shows_info_icon"] boolValue];
 
     NSMutableArray *targets = [NSMutableArray new];
 

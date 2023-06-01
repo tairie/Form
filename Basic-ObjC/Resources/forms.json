@@ -10,6 +10,7 @@
             {
               "id":"first_name",
               "title":"First name",
+              "shows_info_icon":true,
               "accessibility_label":"First Name Accessibility Label",
               "info":"Fornavn",
               "type":"name",

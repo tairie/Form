@@ -679,6 +679,12 @@ static const CGFloat FORMKeyboardAnimationDuration = 0.3f;
                afterDelay:delay];
 }
 
+- (void)fieldCell:(UICollectionViewCell *)fieldCell titleLabelTapped:(FORMField *)field {
+    if (self.titleLabelTappedBlock) {
+        self.titleLabelTappedBlock(fieldCell, field);
+    }
+}
+
 #pragma mark - Targets Procesing
 
 - (void)processTarget:(FORMTarget *)target {

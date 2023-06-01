@@ -31,6 +31,9 @@ typedef UICollectionViewCell * (^FORMConfigureCellForItemAtIndexPathBlock)(FORMF
 typedef void (^FORMFieldFieldUpdatedBlock)(id cell,
                                            FORMField *field);
 
+typedef void (^FORMFieldTitleLabelTappedBlock)(id cell,
+                                           FORMField *field);
+
 @interface FORMDataSource : NSObject <UICollectionViewDataSource, FORMLayoutDataSource>
 
 /*!
@@ -77,6 +80,7 @@ typedef void (^FORMFieldFieldUpdatedBlock)(id cell,
  */
 @property (nonatomic, copy) FORMFieldFieldUpdatedBlock fieldUpdatedBlock;
 
+@property (nonatomic, copy) FORMFieldTitleLabelTappedBlock titleLabelTappedBlock;
 /*!
  * Sets the Form into an editable mode.
  */

@@ -40,5 +40,6 @@ static const CGFloat FORMFieldCellLeftMargin = 10.0f;
 
 - (void)fieldCell:(UICollectionViewCell *)fieldCell updatedWithField:(FORMField *)field;
 - (void)fieldCell:(UICollectionViewCell *)fieldCell processTargets:(NSArray *)targets;
+- (void)fieldCell:(UICollectionViewCell *)fieldCell titleLabelTapped:(FORMField *)field;
 
 @end

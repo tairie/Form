@@ -79,9 +79,9 @@
         }
         return cell;
     };
-
+    
     __weak typeof(self)weakSelf = self;
-
+    
     self.dataSource.fieldUpdatedBlock = ^(id cell, FORMField *field) {
         NSLog(@"field updated: %@ --- %@", field.fieldID, field.value);
 
@@ -99,6 +99,10 @@
                                       }
                                   }];
         }
+    };
+    
+    self.dataSource.titleLabelTappedBlock = ^(id cell, FORMField *field) {
+        NSLog(@"title tapped: %@ --- %@", field.fieldID, field.value);
     };
 }
 

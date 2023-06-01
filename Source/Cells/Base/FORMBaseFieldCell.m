@@ -5,8 +5,8 @@
 #import "UIColor+Hex.h"
 
 static NSString * const FORMHideTooltips = @"FORMHideTooltips";
-static const CGFloat FORMTextFormFieldCellLabelMarginTop = 10.0f;
-static const CGFloat FORMTextFormFieldCellLabelHeight = 20.0f;
+static const CGFloat FORMTextFormFieldCellLabelMarginTop = 6.0f;
+static const CGFloat FORMTextFormFieldCellLabelHeight = 24.0f;
 static const CGFloat FORMTextFormFieldCellLabelMarginX = 5.0f;
 
 static NSString * const FORMHeadingLabelFontKey = @"heading_label_font";
@@ -40,6 +40,11 @@ static NSString * const FORMHeadingLabelTextColorKey = @"heading_label_text_colo
 
     _headingLabel = [[UILabel alloc] initWithFrame:[self headingLabelFrame]];
     _headingLabel.adjustsFontSizeToFitWidth = YES;
+    
+    UITapGestureRecognizer *tapGestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(headingLabelTapped)];
+    tapGestureRecognizer.numberOfTapsRequired = 1;
+    [_headingLabel addGestureRecognizer:tapGestureRecognizer];
+    _headingLabel.userInteractionEnabled = YES;
     
     return _headingLabel;
 }
@@ -78,7 +83,19 @@ static NSString * const FORMHeadingLabelTextColorKey = @"heading_label_text_colo
 
 - (void)updateWithField:(FORMField *)field {
     self.headingLabel.hidden = (field.sectionSeparator);
-    self.headingLabel.text = field.title;
+    
+    if (field.title && field.showsInfoIcon) {
+        NSTextAttachment *attachment = [[NSTextAttachment alloc] init];
+        attachment.image = [[UIImage systemImageNamed:@"info.circle"]
+                            imageWithTintColor:[UIColor colorWithRed:0.22 green:0.39 blue:0.6 alpha:1]];
+        NSMutableAttributedString *fullString = [[NSMutableAttributedString alloc] initWithString:field.title];
+        [fullString appendAttributedString:[[NSMutableAttributedString alloc] initWithString:@" "]];
+        [fullString appendAttributedString:[NSAttributedString attributedStringWithAttachment:attachment]];
+        self.headingLabel.attributedText = fullString;
+    } else {
+        self.headingLabel.text = field.title;
+    }
+    
     self.styles = field.styles;
 
     if (field.sectionSeparator) {
@@ -151,6 +168,14 @@ static NSString * const FORMHeadingLabelTextColorKey = @"heading_label_text_colo
     }
     
     self.headingLabel.textColor = color;
+}
+
+#pragma mark -
+
+- (void)headingLabelTapped {
+    if ([self.delegate respondsToSelector:@selector(fieldCell:titleLabelTapped:)]) {
+        [self.delegate fieldCell:self titleLabelTapped:self.field];
+    }
 }
 
 @end
