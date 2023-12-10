@@ -101,9 +101,11 @@ static const CGSize FORMDatePhonePopoverSize = { 320.0f, 200.0f };
     }
 
     if (field.value) {
-        self.fieldValueLabel.text = [NSDateFormatter localizedStringFromDate:field.value
-                                                                   dateStyle:[self dateStyleForField:field]
-                                                                   timeStyle:[self timeStyleForField:field]];
+        NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+        formatter.dateStyle = [self dateStyleForField:field];
+        formatter.timeStyle = [self timeStyleForField:field];
+        formatter.locale = [[NSLocale alloc] initWithLocaleIdentifier:@"NL"]; // 24-hour format
+        self.fieldValueLabel.text = [formatter stringFromDate:field.value];
 
         self.fieldValueLabel.accessibilityValue = self.fieldValueLabel.text;
     } else {
@@ -209,6 +211,7 @@ static const CGSize FORMDatePhonePopoverSize = { 320.0f, 200.0f };
             break;
         case FORMFieldTypeTime:
             self.datePicker.datePickerMode = UIDatePickerModeTime;
+            self.datePicker.locale = [[NSLocale alloc] initWithLocaleIdentifier:@"NL"]; // 24-hour format
             break;
         default:
             break;
