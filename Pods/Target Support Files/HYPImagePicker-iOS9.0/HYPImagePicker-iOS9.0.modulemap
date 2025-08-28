@@ -1,0 +1,6 @@
+framework module HYPImagePicker {
+  umbrella header "HYPImagePicker-iOS9.0-umbrella.h"
+
+  export *
+  module * { export * }
+}

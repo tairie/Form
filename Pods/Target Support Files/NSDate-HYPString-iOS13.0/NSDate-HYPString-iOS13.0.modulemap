@@ -1,0 +1,6 @@
+framework module NSDate_HYPString {
+  umbrella header "NSDate-HYPString-iOS13.0-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,5 +1,5 @@
 PODS:
-  - Form (3.13.0):
+  - Form (3.14.0):
     - HYP8601 (~> 0.7.2)
     - HYPMathParser (~> 0.4.1)
     - HYPNorwegianAccountNumber (~> 1.2.1)
@@ -40,12 +40,32 @@ DEPENDENCIES:
   - NSDate-HYPString
   - NSDictionary-HYPImmutable
 
+SPEC REPOS:
+  trunk:
+    - HYP8601
+    - HYPImagePicker
+    - HYPMathParser
+    - HYPNorwegianAccountNumber
+    - HYPNorwegianSSN
+    - NSDate-HYPString
+    - NSDictionary-ANDYSafeValue
+    - NSDictionary-HYPImmutable
+    - NSDictionary-HYPNestedAttributes
+    - NSJSONSerialization-ANDYJSONFile
+    - NSObject-HYPTesting
+    - NSString-HYPContainsString
+    - NSString-HYPFormula
+    - NSString-HYPRelationshipParser
+    - NSString-HYPWordExtractor
+    - NSString-ZENInflections
+    - UIViewController-HYPKeyboardToolbar
+
 EXTERNAL SOURCES:
   Form:
     :path: "."
 
 SPEC CHECKSUMS:
-  Form: a2c50b00c4733e53cbb0b04a7aa6af4a8829f817
+  Form: 2d0bf599d1c50e51ad0403714531d797227a066e
   HYP8601: 0118757c1332620748c75e7218e7b6b849686d06
   HYPImagePicker: 5c6e463ec15ae6b647355eb11f3f310342616fbf
   HYPMathParser: 146a4981427a0b46cc9af823b210bfefdf0a7107
@@ -66,4 +86,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: 0cd0340ed2ef2438b11e00aca5204da977f80e34
 
-COCOAPODS: 1.2.0
+COCOAPODS: 1.16.2

@@ -1088,7 +1088,6 @@
 				1406BB771BEA520D00131623 /* Frameworks */,
 				1406BB781BEA520D00131623 /* Resources */,
 				237F2646368237502D58789E /* [CP] Embed Pods Frameworks */,
-				8A281BC08732BB49B249B02F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -1108,7 +1107,6 @@
 				1406BB8F1BEA521F00131623 /* Frameworks */,
 				1406BB901BEA521F00131623 /* Resources */,
 				9C4F4D361264BA0FDCF4683E /* [CP] Embed Pods Frameworks */,
-				08E8647FB3E3F63C4FB31FA0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -1128,7 +1126,6 @@
 				1406BBA01BEA522900131623 /* Frameworks */,
 				1406BBA11BEA522900131623 /* Resources */,
 				31C07B56CF0B5E28D4A93930 /* [CP] Embed Pods Frameworks */,
-				186DDD118377814CDA13B951 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -1148,7 +1145,6 @@
 				1406BBC21BEA525000131623 /* Frameworks */,
 				1406BBC31BEA525000131623 /* Resources */,
 				2D180FE3527AD97DDE158C3F /* [CP] Embed Pods Frameworks */,
-				BE548AF0AF83F01CC2E9C4DA /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -1168,7 +1164,6 @@
 				1406BBD31BEA529600131623 /* Frameworks */,
 				1406BBD41BEA529600131623 /* Resources */,
 				B09D27E92F354E0EC08376C8 /* [CP] Embed Pods Frameworks */,
-				6782D360B66AD5A1431E6E5A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -1188,7 +1183,6 @@
 				142F32C71BFBBECF00368056 /* Frameworks */,
 				142F32C81BFBBECF00368056 /* Resources */,
 				EB4FE714DD02DECEED3CA854 /* [CP] Embed Pods Frameworks */,
-				2F0CC72E86D0ABED2F7888E8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -1208,7 +1202,6 @@
 				146D72A91AB782920058798C /* Frameworks */,
 				146D72AA1AB782920058798C /* Resources */,
 				A952B40E257767A195D12F3C /* [CP] Embed Pods Frameworks */,
-				CB36825A32C292037C6591A4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -1228,7 +1221,6 @@
 				14BD560C1BEA576F0043A673 /* Frameworks */,
 				14BD560D1BEA576F0043A673 /* Resources */,
 				710A9E69976AD6139F8357D4 /* [CP] Embed Pods Frameworks */,
-				29554027C85483370AF37860 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -1252,7 +1244,7 @@
 				TargetAttributes = {
 					1406BB791BEA520D00131623 = {
 						CreatedOnToolsVersion = 7.1;
-						DevelopmentTeam = 38FRDV89F6;
+						DevelopmentTeam = Z75N8D9G74;
 						LastSwiftMigration = 0800;
 					};
 					1406BB911BEA521F00131623 = {
@@ -1280,6 +1272,7 @@
 					};
 					146D72AB1AB782920058798C = {
 						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = Z75N8D9G74;
 						LastSwiftMigration = 0800;
 					};
 					14BD560E1BEA576F0043A673 = {
@@ -1426,49 +1419,22 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		08E8647FB3E3F63C4FB31FA0 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CocoaPods-Basic-Swift/Pods-CocoaPods-Basic-Swift-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		186DDD118377814CDA13B951 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CocoaPods-CustomField/Pods-CocoaPods-CustomField-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		1D31F8911A1ADFEC7E3AAC9C /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CocoaPods-CustomField-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		237F2646368237502D58789E /* [CP] Embed Pods Frameworks */ = {
@@ -1477,28 +1443,50 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CocoaPods-Basic-ObjC/Pods-CocoaPods-Basic-ObjC-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Form-iOS9.0/Form.framework",
+				"${BUILT_PRODUCTS_DIR}/HYP8601-iOS9.0/HYP8601.framework",
+				"${BUILT_PRODUCTS_DIR}/HYPImagePicker-iOS9.0/HYPImagePicker.framework",
+				"${BUILT_PRODUCTS_DIR}/HYPMathParser-iOS9.0/HYPMathParser.framework",
+				"${BUILT_PRODUCTS_DIR}/HYPNorwegianAccountNumber-iOS9.0/HYPNorwegianAccountNumber.framework",
+				"${BUILT_PRODUCTS_DIR}/HYPNorwegianSSN-iOS9.0/HYPNorwegianSSN.framework",
+				"${BUILT_PRODUCTS_DIR}/NSDate-HYPString-iOS9.0/NSDate_HYPString.framework",
+				"${BUILT_PRODUCTS_DIR}/NSDictionary-ANDYSafeValue-iOS9.0/NSDictionary_ANDYSafeValue.framework",
+				"${BUILT_PRODUCTS_DIR}/NSDictionary-HYPImmutable-iOS9.0/NSDictionary_HYPImmutable.framework",
+				"${BUILT_PRODUCTS_DIR}/NSDictionary-HYPNestedAttributes-iOS9.0/NSDictionary_HYPNestedAttributes.framework",
+				"${BUILT_PRODUCTS_DIR}/NSJSONSerialization-ANDYJSONFile-iOS9.0/NSJSONSerialization_ANDYJSONFile.framework",
+				"${BUILT_PRODUCTS_DIR}/NSObject-HYPTesting-iOS9.0/NSObject_HYPTesting.framework",
+				"${BUILT_PRODUCTS_DIR}/NSString-HYPContainsString-iOS9.0/NSString_HYPContainsString.framework",
+				"${BUILT_PRODUCTS_DIR}/NSString-HYPFormula-iOS9.0/NSString_HYPFormula.framework",
+				"${BUILT_PRODUCTS_DIR}/NSString-HYPRelationshipParser-iOS9.0/NSString_HYPRelationshipParser.framework",
+				"${BUILT_PRODUCTS_DIR}/NSString-HYPWordExtractor-iOS9.0/NSString_HYPWordExtractor.framework",
+				"${BUILT_PRODUCTS_DIR}/NSString-ZENInflections-iOS9.0/NSString_ZENInflections.framework",
+				"${BUILT_PRODUCTS_DIR}/UIViewController-HYPKeyboardToolbar-iOS9.0/UIViewController_HYPKeyboardToolbar.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Form.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HYP8601.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HYPImagePicker.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HYPMathParser.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HYPNorwegianAccountNumber.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HYPNorwegianSSN.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NSDate_HYPString.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NSDictionary_ANDYSafeValue.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NSDictionary_HYPImmutable.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NSDictionary_HYPNestedAttributes.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NSJSONSerialization_ANDYJSONFile.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NSObject_HYPTesting.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NSString_HYPContainsString.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NSString_HYPFormula.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NSString_HYPRelationshipParser.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NSString_HYPWordExtractor.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NSString_ZENInflections.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/UIViewController_HYPKeyboardToolbar.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CocoaPods-Basic-ObjC/Pods-CocoaPods-Basic-ObjC-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		29554027C85483370AF37860 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CocoaPods-LoginDemo/Pods-CocoaPods-LoginDemo-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CocoaPods-Basic-ObjC/Pods-CocoaPods-Basic-ObjC-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		2D180FE3527AD97DDE158C3F /* [CP] Embed Pods Frameworks */ = {
@@ -1507,28 +1495,50 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CocoaPods-Payment/Pods-CocoaPods-Payment-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Form-iOS9.0/Form.framework",
+				"${BUILT_PRODUCTS_DIR}/HYP8601-iOS9.0/HYP8601.framework",
+				"${BUILT_PRODUCTS_DIR}/HYPImagePicker-iOS9.0/HYPImagePicker.framework",
+				"${BUILT_PRODUCTS_DIR}/HYPMathParser-iOS9.0/HYPMathParser.framework",
+				"${BUILT_PRODUCTS_DIR}/HYPNorwegianAccountNumber-iOS9.0/HYPNorwegianAccountNumber.framework",
+				"${BUILT_PRODUCTS_DIR}/HYPNorwegianSSN-iOS9.0/HYPNorwegianSSN.framework",
+				"${BUILT_PRODUCTS_DIR}/NSDate-HYPString-iOS9.0/NSDate_HYPString.framework",
+				"${BUILT_PRODUCTS_DIR}/NSDictionary-ANDYSafeValue-iOS9.0/NSDictionary_ANDYSafeValue.framework",
+				"${BUILT_PRODUCTS_DIR}/NSDictionary-HYPImmutable-iOS9.0/NSDictionary_HYPImmutable.framework",
+				"${BUILT_PRODUCTS_DIR}/NSDictionary-HYPNestedAttributes-iOS9.0/NSDictionary_HYPNestedAttributes.framework",
+				"${BUILT_PRODUCTS_DIR}/NSJSONSerialization-ANDYJSONFile-iOS9.0/NSJSONSerialization_ANDYJSONFile.framework",
+				"${BUILT_PRODUCTS_DIR}/NSObject-HYPTesting-iOS9.0/NSObject_HYPTesting.framework",
+				"${BUILT_PRODUCTS_DIR}/NSString-HYPContainsString-iOS9.0/NSString_HYPContainsString.framework",
+				"${BUILT_PRODUCTS_DIR}/NSString-HYPFormula-iOS9.0/NSString_HYPFormula.framework",
+				"${BUILT_PRODUCTS_DIR}/NSString-HYPRelationshipParser-iOS9.0/NSString_HYPRelationshipParser.framework",
+				"${BUILT_PRODUCTS_DIR}/NSString-HYPWordExtractor-iOS9.0/NSString_HYPWordExtractor.framework",
+				"${BUILT_PRODUCTS_DIR}/NSString-ZENInflections-iOS9.0/NSString_ZENInflections.framework",
+				"${BUILT_PRODUCTS_DIR}/UIViewController-HYPKeyboardToolbar-iOS9.0/UIViewController_HYPKeyboardToolbar.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Form.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HYP8601.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HYPImagePicker.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HYPMathParser.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HYPNorwegianAccountNumber.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HYPNorwegianSSN.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NSDate_HYPString.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NSDictionary_ANDYSafeValue.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NSDictionary_HYPImmutable.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NSDictionary_HYPNestedAttributes.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NSJSONSerialization_ANDYJSONFile.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NSObject_HYPTesting.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NSString_HYPContainsString.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NSString_HYPFormula.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NSString_HYPRelationshipParser.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NSString_HYPWordExtractor.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NSString_ZENInflections.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/UIViewController_HYPKeyboardToolbar.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CocoaPods-Payment/Pods-CocoaPods-Payment-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		2F0CC72E86D0ABED2F7888E8 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CocoaPods-ModalForm/Pods-CocoaPods-ModalForm-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CocoaPods-Payment/Pods-CocoaPods-Payment-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		31C07B56CF0B5E28D4A93930 /* [CP] Embed Pods Frameworks */ = {
@@ -1537,13 +1547,50 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CocoaPods-CustomField/Pods-CocoaPods-CustomField-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Form-iOS9.0/Form.framework",
+				"${BUILT_PRODUCTS_DIR}/HYP8601-iOS9.0/HYP8601.framework",
+				"${BUILT_PRODUCTS_DIR}/HYPImagePicker-iOS9.0/HYPImagePicker.framework",
+				"${BUILT_PRODUCTS_DIR}/HYPMathParser-iOS9.0/HYPMathParser.framework",
+				"${BUILT_PRODUCTS_DIR}/HYPNorwegianAccountNumber-iOS9.0/HYPNorwegianAccountNumber.framework",
+				"${BUILT_PRODUCTS_DIR}/HYPNorwegianSSN-iOS9.0/HYPNorwegianSSN.framework",
+				"${BUILT_PRODUCTS_DIR}/NSDate-HYPString-iOS9.0/NSDate_HYPString.framework",
+				"${BUILT_PRODUCTS_DIR}/NSDictionary-ANDYSafeValue-iOS9.0/NSDictionary_ANDYSafeValue.framework",
+				"${BUILT_PRODUCTS_DIR}/NSDictionary-HYPImmutable-iOS9.0/NSDictionary_HYPImmutable.framework",
+				"${BUILT_PRODUCTS_DIR}/NSDictionary-HYPNestedAttributes-iOS9.0/NSDictionary_HYPNestedAttributes.framework",
+				"${BUILT_PRODUCTS_DIR}/NSJSONSerialization-ANDYJSONFile-iOS9.0/NSJSONSerialization_ANDYJSONFile.framework",
+				"${BUILT_PRODUCTS_DIR}/NSObject-HYPTesting-iOS9.0/NSObject_HYPTesting.framework",
+				"${BUILT_PRODUCTS_DIR}/NSString-HYPContainsString-iOS9.0/NSString_HYPContainsString.framework",
+				"${BUILT_PRODUCTS_DIR}/NSString-HYPFormula-iOS9.0/NSString_HYPFormula.framework",
+				"${BUILT_PRODUCTS_DIR}/NSString-HYPRelationshipParser-iOS9.0/NSString_HYPRelationshipParser.framework",
+				"${BUILT_PRODUCTS_DIR}/NSString-HYPWordExtractor-iOS9.0/NSString_HYPWordExtractor.framework",
+				"${BUILT_PRODUCTS_DIR}/NSString-ZENInflections-iOS9.0/NSString_ZENInflections.framework",
+				"${BUILT_PRODUCTS_DIR}/UIViewController-HYPKeyboardToolbar-iOS9.0/UIViewController_HYPKeyboardToolbar.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Form.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HYP8601.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HYPImagePicker.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HYPMathParser.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HYPNorwegianAccountNumber.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HYPNorwegianSSN.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NSDate_HYPString.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NSDictionary_ANDYSafeValue.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NSDictionary_HYPImmutable.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NSDictionary_HYPNestedAttributes.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NSJSONSerialization_ANDYJSONFile.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NSObject_HYPTesting.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NSString_HYPContainsString.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NSString_HYPFormula.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NSString_HYPRelationshipParser.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NSString_HYPWordExtractor.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NSString_ZENInflections.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/UIViewController_HYPKeyboardToolbar.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CocoaPods-CustomField/Pods-CocoaPods-CustomField-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CocoaPods-CustomField/Pods-CocoaPods-CustomField-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		5465F56C759E7C9EDD9F7AE2 /* [CP] Check Pods Manifest.lock */ = {
@@ -1552,13 +1599,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CocoaPods-Tests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		594B5A2A08775B0B91143ACE /* [CP] Check Pods Manifest.lock */ = {
@@ -1567,28 +1617,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CocoaPods-Basic-Swift-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		6782D360B66AD5A1431E6E5A /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CocoaPods-iPhone-Storyboard/Pods-CocoaPods-iPhone-Storyboard-resources.sh\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		710A9E69976AD6139F8357D4 /* [CP] Embed Pods Frameworks */ = {
@@ -1597,13 +1635,50 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CocoaPods-LoginDemo/Pods-CocoaPods-LoginDemo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Form-iOS9.0/Form.framework",
+				"${BUILT_PRODUCTS_DIR}/HYP8601-iOS9.0/HYP8601.framework",
+				"${BUILT_PRODUCTS_DIR}/HYPImagePicker-iOS9.0/HYPImagePicker.framework",
+				"${BUILT_PRODUCTS_DIR}/HYPMathParser-iOS9.0/HYPMathParser.framework",
+				"${BUILT_PRODUCTS_DIR}/HYPNorwegianAccountNumber-iOS9.0/HYPNorwegianAccountNumber.framework",
+				"${BUILT_PRODUCTS_DIR}/HYPNorwegianSSN-iOS9.0/HYPNorwegianSSN.framework",
+				"${BUILT_PRODUCTS_DIR}/NSDate-HYPString-iOS9.0/NSDate_HYPString.framework",
+				"${BUILT_PRODUCTS_DIR}/NSDictionary-ANDYSafeValue-iOS9.0/NSDictionary_ANDYSafeValue.framework",
+				"${BUILT_PRODUCTS_DIR}/NSDictionary-HYPImmutable-iOS9.0/NSDictionary_HYPImmutable.framework",
+				"${BUILT_PRODUCTS_DIR}/NSDictionary-HYPNestedAttributes-iOS9.0/NSDictionary_HYPNestedAttributes.framework",
+				"${BUILT_PRODUCTS_DIR}/NSJSONSerialization-ANDYJSONFile-iOS9.0/NSJSONSerialization_ANDYJSONFile.framework",
+				"${BUILT_PRODUCTS_DIR}/NSObject-HYPTesting-iOS9.0/NSObject_HYPTesting.framework",
+				"${BUILT_PRODUCTS_DIR}/NSString-HYPContainsString-iOS9.0/NSString_HYPContainsString.framework",
+				"${BUILT_PRODUCTS_DIR}/NSString-HYPFormula-iOS9.0/NSString_HYPFormula.framework",
+				"${BUILT_PRODUCTS_DIR}/NSString-HYPRelationshipParser-iOS9.0/NSString_HYPRelationshipParser.framework",
+				"${BUILT_PRODUCTS_DIR}/NSString-HYPWordExtractor-iOS9.0/NSString_HYPWordExtractor.framework",
+				"${BUILT_PRODUCTS_DIR}/NSString-ZENInflections-iOS9.0/NSString_ZENInflections.framework",
+				"${BUILT_PRODUCTS_DIR}/UIViewController-HYPKeyboardToolbar-iOS9.0/UIViewController_HYPKeyboardToolbar.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Form.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HYP8601.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HYPImagePicker.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HYPMathParser.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HYPNorwegianAccountNumber.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HYPNorwegianSSN.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NSDate_HYPString.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NSDictionary_ANDYSafeValue.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NSDictionary_HYPImmutable.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NSDictionary_HYPNestedAttributes.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NSJSONSerialization_ANDYJSONFile.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NSObject_HYPTesting.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NSString_HYPContainsString.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NSString_HYPFormula.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NSString_HYPRelationshipParser.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NSString_HYPWordExtractor.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NSString_ZENInflections.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/UIViewController_HYPKeyboardToolbar.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CocoaPods-LoginDemo/Pods-CocoaPods-LoginDemo-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CocoaPods-LoginDemo/Pods-CocoaPods-LoginDemo-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		78335CAF15BB596ED66F405C /* [CP] Check Pods Manifest.lock */ = {
@@ -1612,13 +1687,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CocoaPods-Basic-ObjC-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		83E144B85200E2471A0A079E /* [CP] Check Pods Manifest.lock */ = {
@@ -1627,28 +1705,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CocoaPods-iPhone-Storyboard-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		8A281BC08732BB49B249B02F /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CocoaPods-Basic-ObjC/Pods-CocoaPods-Basic-ObjC-resources.sh\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		8AFDE364B51A41A4FEA1F4AF /* [CP] Check Pods Manifest.lock */ = {
@@ -1657,13 +1723,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CocoaPods-ModalForm-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		981CF445BDAB3BDC34022C25 /* [CP] Check Pods Manifest.lock */ = {
@@ -1672,13 +1741,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CocoaPods-Payment-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		9C4F4D361264BA0FDCF4683E /* [CP] Embed Pods Frameworks */ = {
@@ -1687,13 +1759,50 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CocoaPods-Basic-Swift/Pods-CocoaPods-Basic-Swift-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Form-iOS9.0/Form.framework",
+				"${BUILT_PRODUCTS_DIR}/HYP8601-iOS9.0/HYP8601.framework",
+				"${BUILT_PRODUCTS_DIR}/HYPImagePicker-iOS9.0/HYPImagePicker.framework",
+				"${BUILT_PRODUCTS_DIR}/HYPMathParser-iOS9.0/HYPMathParser.framework",
+				"${BUILT_PRODUCTS_DIR}/HYPNorwegianAccountNumber-iOS9.0/HYPNorwegianAccountNumber.framework",
+				"${BUILT_PRODUCTS_DIR}/HYPNorwegianSSN-iOS9.0/HYPNorwegianSSN.framework",
+				"${BUILT_PRODUCTS_DIR}/NSDate-HYPString-iOS9.0/NSDate_HYPString.framework",
+				"${BUILT_PRODUCTS_DIR}/NSDictionary-ANDYSafeValue-iOS9.0/NSDictionary_ANDYSafeValue.framework",
+				"${BUILT_PRODUCTS_DIR}/NSDictionary-HYPImmutable-iOS9.0/NSDictionary_HYPImmutable.framework",
+				"${BUILT_PRODUCTS_DIR}/NSDictionary-HYPNestedAttributes-iOS9.0/NSDictionary_HYPNestedAttributes.framework",
+				"${BUILT_PRODUCTS_DIR}/NSJSONSerialization-ANDYJSONFile-iOS9.0/NSJSONSerialization_ANDYJSONFile.framework",
+				"${BUILT_PRODUCTS_DIR}/NSObject-HYPTesting-iOS9.0/NSObject_HYPTesting.framework",
+				"${BUILT_PRODUCTS_DIR}/NSString-HYPContainsString-iOS9.0/NSString_HYPContainsString.framework",
+				"${BUILT_PRODUCTS_DIR}/NSString-HYPFormula-iOS9.0/NSString_HYPFormula.framework",
+				"${BUILT_PRODUCTS_DIR}/NSString-HYPRelationshipParser-iOS9.0/NSString_HYPRelationshipParser.framework",
+				"${BUILT_PRODUCTS_DIR}/NSString-HYPWordExtractor-iOS9.0/NSString_HYPWordExtractor.framework",
+				"${BUILT_PRODUCTS_DIR}/NSString-ZENInflections-iOS9.0/NSString_ZENInflections.framework",
+				"${BUILT_PRODUCTS_DIR}/UIViewController-HYPKeyboardToolbar-iOS9.0/UIViewController_HYPKeyboardToolbar.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Form.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HYP8601.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HYPImagePicker.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HYPMathParser.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HYPNorwegianAccountNumber.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HYPNorwegianSSN.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NSDate_HYPString.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NSDictionary_ANDYSafeValue.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NSDictionary_HYPImmutable.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NSDictionary_HYPNestedAttributes.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NSJSONSerialization_ANDYJSONFile.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NSObject_HYPTesting.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NSString_HYPContainsString.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NSString_HYPFormula.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NSString_HYPRelationshipParser.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NSString_HYPWordExtractor.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NSString_ZENInflections.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/UIViewController_HYPKeyboardToolbar.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CocoaPods-Basic-Swift/Pods-CocoaPods-Basic-Swift-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CocoaPods-Basic-Swift/Pods-CocoaPods-Basic-Swift-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		A952B40E257767A195D12F3C /* [CP] Embed Pods Frameworks */ = {
@@ -1702,13 +1811,50 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CocoaPods-Tests/Pods-CocoaPods-Tests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Form-iOS9.0/Form.framework",
+				"${BUILT_PRODUCTS_DIR}/HYP8601-iOS9.0/HYP8601.framework",
+				"${BUILT_PRODUCTS_DIR}/HYPImagePicker-iOS9.0/HYPImagePicker.framework",
+				"${BUILT_PRODUCTS_DIR}/HYPMathParser-iOS9.0/HYPMathParser.framework",
+				"${BUILT_PRODUCTS_DIR}/HYPNorwegianAccountNumber-iOS9.0/HYPNorwegianAccountNumber.framework",
+				"${BUILT_PRODUCTS_DIR}/HYPNorwegianSSN-iOS9.0/HYPNorwegianSSN.framework",
+				"${BUILT_PRODUCTS_DIR}/NSDate-HYPString-iOS9.0/NSDate_HYPString.framework",
+				"${BUILT_PRODUCTS_DIR}/NSDictionary-ANDYSafeValue-iOS9.0/NSDictionary_ANDYSafeValue.framework",
+				"${BUILT_PRODUCTS_DIR}/NSDictionary-HYPImmutable-iOS9.0/NSDictionary_HYPImmutable.framework",
+				"${BUILT_PRODUCTS_DIR}/NSDictionary-HYPNestedAttributes-iOS9.0/NSDictionary_HYPNestedAttributes.framework",
+				"${BUILT_PRODUCTS_DIR}/NSJSONSerialization-ANDYJSONFile-iOS9.0/NSJSONSerialization_ANDYJSONFile.framework",
+				"${BUILT_PRODUCTS_DIR}/NSObject-HYPTesting-iOS9.0/NSObject_HYPTesting.framework",
+				"${BUILT_PRODUCTS_DIR}/NSString-HYPContainsString-iOS9.0/NSString_HYPContainsString.framework",
+				"${BUILT_PRODUCTS_DIR}/NSString-HYPFormula-iOS9.0/NSString_HYPFormula.framework",
+				"${BUILT_PRODUCTS_DIR}/NSString-HYPRelationshipParser-iOS9.0/NSString_HYPRelationshipParser.framework",
+				"${BUILT_PRODUCTS_DIR}/NSString-HYPWordExtractor-iOS9.0/NSString_HYPWordExtractor.framework",
+				"${BUILT_PRODUCTS_DIR}/NSString-ZENInflections-iOS9.0/NSString_ZENInflections.framework",
+				"${BUILT_PRODUCTS_DIR}/UIViewController-HYPKeyboardToolbar-iOS9.0/UIViewController_HYPKeyboardToolbar.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Form.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HYP8601.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HYPImagePicker.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HYPMathParser.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HYPNorwegianAccountNumber.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HYPNorwegianSSN.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NSDate_HYPString.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NSDictionary_ANDYSafeValue.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NSDictionary_HYPImmutable.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NSDictionary_HYPNestedAttributes.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NSJSONSerialization_ANDYJSONFile.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NSObject_HYPTesting.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NSString_HYPContainsString.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NSString_HYPFormula.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NSString_HYPRelationshipParser.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NSString_HYPWordExtractor.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NSString_ZENInflections.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/UIViewController_HYPKeyboardToolbar.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CocoaPods-Tests/Pods-CocoaPods-Tests-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CocoaPods-Tests/Pods-CocoaPods-Tests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		B09D27E92F354E0EC08376C8 /* [CP] Embed Pods Frameworks */ = {
@@ -1717,43 +1863,50 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CocoaPods-iPhone-Storyboard/Pods-CocoaPods-iPhone-Storyboard-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Form-iOS13.0/Form.framework",
+				"${BUILT_PRODUCTS_DIR}/HYP8601-iOS13.0/HYP8601.framework",
+				"${BUILT_PRODUCTS_DIR}/HYPImagePicker-iOS13.0/HYPImagePicker.framework",
+				"${BUILT_PRODUCTS_DIR}/HYPMathParser-iOS13.0/HYPMathParser.framework",
+				"${BUILT_PRODUCTS_DIR}/HYPNorwegianAccountNumber-iOS13.0/HYPNorwegianAccountNumber.framework",
+				"${BUILT_PRODUCTS_DIR}/HYPNorwegianSSN-iOS13.0/HYPNorwegianSSN.framework",
+				"${BUILT_PRODUCTS_DIR}/NSDate-HYPString-iOS13.0/NSDate_HYPString.framework",
+				"${BUILT_PRODUCTS_DIR}/NSDictionary-ANDYSafeValue-iOS13.0/NSDictionary_ANDYSafeValue.framework",
+				"${BUILT_PRODUCTS_DIR}/NSDictionary-HYPImmutable-iOS13.0/NSDictionary_HYPImmutable.framework",
+				"${BUILT_PRODUCTS_DIR}/NSDictionary-HYPNestedAttributes-iOS13.0/NSDictionary_HYPNestedAttributes.framework",
+				"${BUILT_PRODUCTS_DIR}/NSJSONSerialization-ANDYJSONFile-iOS13.0/NSJSONSerialization_ANDYJSONFile.framework",
+				"${BUILT_PRODUCTS_DIR}/NSObject-HYPTesting-iOS13.0/NSObject_HYPTesting.framework",
+				"${BUILT_PRODUCTS_DIR}/NSString-HYPContainsString-iOS13.0/NSString_HYPContainsString.framework",
+				"${BUILT_PRODUCTS_DIR}/NSString-HYPFormula-iOS13.0/NSString_HYPFormula.framework",
+				"${BUILT_PRODUCTS_DIR}/NSString-HYPRelationshipParser-iOS13.0/NSString_HYPRelationshipParser.framework",
+				"${BUILT_PRODUCTS_DIR}/NSString-HYPWordExtractor-iOS13.0/NSString_HYPWordExtractor.framework",
+				"${BUILT_PRODUCTS_DIR}/NSString-ZENInflections-iOS13.0/NSString_ZENInflections.framework",
+				"${BUILT_PRODUCTS_DIR}/UIViewController-HYPKeyboardToolbar-iOS13.0/UIViewController_HYPKeyboardToolbar.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Form.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HYP8601.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HYPImagePicker.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HYPMathParser.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HYPNorwegianAccountNumber.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HYPNorwegianSSN.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NSDate_HYPString.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NSDictionary_ANDYSafeValue.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NSDictionary_HYPImmutable.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NSDictionary_HYPNestedAttributes.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NSJSONSerialization_ANDYJSONFile.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NSObject_HYPTesting.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NSString_HYPContainsString.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NSString_HYPFormula.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NSString_HYPRelationshipParser.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NSString_HYPWordExtractor.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NSString_ZENInflections.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/UIViewController_HYPKeyboardToolbar.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CocoaPods-iPhone-Storyboard/Pods-CocoaPods-iPhone-Storyboard-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		BE548AF0AF83F01CC2E9C4DA /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CocoaPods-Payment/Pods-CocoaPods-Payment-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		CB36825A32C292037C6591A4 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CocoaPods-Tests/Pods-CocoaPods-Tests-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CocoaPods-iPhone-Storyboard/Pods-CocoaPods-iPhone-Storyboard-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		DF3386025B4B6594CB83D974 /* [CP] Check Pods Manifest.lock */ = {
@@ -1762,13 +1915,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CocoaPods-LoginDemo-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		EB4FE714DD02DECEED3CA854 /* [CP] Embed Pods Frameworks */ = {
@@ -1777,13 +1933,50 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CocoaPods-ModalForm/Pods-CocoaPods-ModalForm-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Form-iOS9.0/Form.framework",
+				"${BUILT_PRODUCTS_DIR}/HYP8601-iOS9.0/HYP8601.framework",
+				"${BUILT_PRODUCTS_DIR}/HYPImagePicker-iOS9.0/HYPImagePicker.framework",
+				"${BUILT_PRODUCTS_DIR}/HYPMathParser-iOS9.0/HYPMathParser.framework",
+				"${BUILT_PRODUCTS_DIR}/HYPNorwegianAccountNumber-iOS9.0/HYPNorwegianAccountNumber.framework",
+				"${BUILT_PRODUCTS_DIR}/HYPNorwegianSSN-iOS9.0/HYPNorwegianSSN.framework",
+				"${BUILT_PRODUCTS_DIR}/NSDate-HYPString-iOS9.0/NSDate_HYPString.framework",
+				"${BUILT_PRODUCTS_DIR}/NSDictionary-ANDYSafeValue-iOS9.0/NSDictionary_ANDYSafeValue.framework",
+				"${BUILT_PRODUCTS_DIR}/NSDictionary-HYPImmutable-iOS9.0/NSDictionary_HYPImmutable.framework",
+				"${BUILT_PRODUCTS_DIR}/NSDictionary-HYPNestedAttributes-iOS9.0/NSDictionary_HYPNestedAttributes.framework",
+				"${BUILT_PRODUCTS_DIR}/NSJSONSerialization-ANDYJSONFile-iOS9.0/NSJSONSerialization_ANDYJSONFile.framework",
+				"${BUILT_PRODUCTS_DIR}/NSObject-HYPTesting-iOS9.0/NSObject_HYPTesting.framework",
+				"${BUILT_PRODUCTS_DIR}/NSString-HYPContainsString-iOS9.0/NSString_HYPContainsString.framework",
+				"${BUILT_PRODUCTS_DIR}/NSString-HYPFormula-iOS9.0/NSString_HYPFormula.framework",
+				"${BUILT_PRODUCTS_DIR}/NSString-HYPRelationshipParser-iOS9.0/NSString_HYPRelationshipParser.framework",
+				"${BUILT_PRODUCTS_DIR}/NSString-HYPWordExtractor-iOS9.0/NSString_HYPWordExtractor.framework",
+				"${BUILT_PRODUCTS_DIR}/NSString-ZENInflections-iOS9.0/NSString_ZENInflections.framework",
+				"${BUILT_PRODUCTS_DIR}/UIViewController-HYPKeyboardToolbar-iOS9.0/UIViewController_HYPKeyboardToolbar.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Form.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HYP8601.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HYPImagePicker.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HYPMathParser.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HYPNorwegianAccountNumber.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HYPNorwegianSSN.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NSDate_HYPString.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NSDictionary_ANDYSafeValue.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NSDictionary_HYPImmutable.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NSDictionary_HYPNestedAttributes.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NSJSONSerialization_ANDYJSONFile.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NSObject_HYPTesting.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NSString_HYPContainsString.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NSString_HYPFormula.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NSString_HYPRelationshipParser.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NSString_HYPWordExtractor.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NSString_ZENInflections.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/UIViewController_HYPKeyboardToolbar.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CocoaPods-ModalForm/Pods-CocoaPods-ModalForm-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CocoaPods-ModalForm/Pods-CocoaPods-ModalForm-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -1875,6 +2068,7 @@
 				140803EA1BEA50AB0098C288 /* FORMDefaultStyle.m in Sources */,
 				140803E61BEA50AB0098C288 /* FORMSocialSecurityNumberFormatter.m in Sources */,
 				140803EC1BEA50AB0098C288 /* FORMLayout.m in Sources */,
+				16704B072E5FE875002C0EC1 /* FORMSignedNumberInputValidator.m in Sources */,
 				1408042E1BEA50C00098C288 /* FORMDataSourceTests.m in Sources */,
 				140803DE1BEA50AB0098C288 /* FORMFieldValueLabel.m in Sources */,
 				140804021BEA50AB0098C288 /* UIDevice+HYPRealOrientation.m in Sources */,
@@ -2043,10 +2237,10 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEVELOPMENT_TEAM = 38FRDV89F6;
+				DEVELOPMENT_TEAM = Z75N8D9G74;
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = "Basic-ObjC/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.hyper.form.demo.Basic-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -2065,10 +2259,10 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = 38FRDV89F6;
+				DEVELOPMENT_TEAM = Z75N8D9G74;
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = "Basic-ObjC/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.hyper.form.demo.Basic-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -2398,17 +2592,19 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = Z75N8D9G74;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sample.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -2418,12 +2614,14 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = Z75N8D9G74;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sample.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};

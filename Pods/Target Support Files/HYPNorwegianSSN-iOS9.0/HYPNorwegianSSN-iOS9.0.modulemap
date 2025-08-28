@@ -1,0 +1,6 @@
+framework module HYPNorwegianSSN {
+  umbrella header "HYPNorwegianSSN-iOS9.0-umbrella.h"
+
+  export *
+  module * { export * }
+}

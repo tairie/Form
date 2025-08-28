@@ -1,0 +1,6 @@
+framework module NSString_HYPWordExtractor {
+  umbrella header "NSString-HYPWordExtractor-iOS13.0-umbrella.h"
+
+  export *
+  module * { export * }
+}
