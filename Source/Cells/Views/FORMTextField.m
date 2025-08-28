@@ -159,6 +159,8 @@ static NSString * const FORMTextFieldPlusButtonColorKey = @"plus_button_color";
         type = FORMTextFieldTypePhoneNumber;
     } else if ([typeString isEqualToString:@"number"]) {
         type = FORMTextFieldTypeNumber;
+    } else if ([typeString isEqualToString:@"signed_number"]) {
+        type = FORMTextFieldTypeSignedNumber;
     } else if ([typeString isEqualToString:@"float"]) {
         type = FORMTextFieldTypeFloat;
     } else if ([typeString isEqualToString:@"address"]) {
