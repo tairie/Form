@@ -165,6 +165,7 @@ static const CGFloat FORMKeyboardAnimationDuration = 0.3f;
         case FORMFieldTypeText:
         case FORMFieldTypeFloat:
         case FORMFieldTypeNumber:
+        case FORMFieldTypeSignedNumber:
             identifier = [NSString stringWithFormat:@"%@-%@", FORMTextFieldCellIdentifier, field.fieldID];
             [collectionView registerClass:[FORMTextFieldCell class]
                forCellWithReuseIdentifier:identifier];

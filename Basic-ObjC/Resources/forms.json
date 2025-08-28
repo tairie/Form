@@ -89,6 +89,30 @@
               }
             },
             {
+                "id":"normal_number_test",
+                "title":"Normal number test",
+                "type":"number",
+                "size":{
+                    "width":100
+                },
+                "validations":{
+                    "max_value":990,
+                    "min_value":0
+                }
+            },
+            {
+                "id":"negative_number_test",
+                "title":"Negative number test",
+                "type":"signed_number",
+                "size":{
+                    "width":100
+                },
+                "validations":{
+                    "max_value":990,
+                    "min_value":-990
+                }
+            },
+            {
               "id":"image",
               "type":"image",
               "size":{

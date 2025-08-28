@@ -1,5 +1,6 @@
 #import "FORMInputValidator.h"
 #import "FORMNumberInputValidator.h"
+#import "FORMSignedNumberInputValidator.h"
 
 @implementation FORMInputValidator
 
@@ -19,6 +20,8 @@
         valid = (textLength <= [self.validation.maximumLength unsignedIntegerValue]);
     }
 
+    if (!valid) return NO;
+    
     if (self.validation.maximumValue && text) {
         if (range.location != NSNotFound && range.location <= text.length) {
             NSMutableString *newString = [[NSMutableString alloc] initWithString:text];
@@ -32,6 +35,25 @@
             if (eligibleForCompare) valid = ([newValue floatValue] <= [maxValue floatValue]);
         } else {
           valid = NO;
+        }
+    }
+    
+    if (!valid) return NO;
+    
+    // minimumValueが負の場合で、新しい文字列が負の数になる場合は、minimumValue以上かどうかをチェックする
+    if (self.validation.minimumValue.floatValue < 0 && text) {
+        if (range.location != NSNotFound && range.location <= text.length) {
+            NSMutableString *newString = [[NSMutableString alloc] initWithString:text];
+            [newString insertString:string atIndex:range.location];
+            NSNumberFormatter *formatter = [NSNumberFormatter new];
+            formatter.locale = [NSLocale localeWithLocaleIdentifier:@"en_US"];
+            NSNumber *newValue = [formatter numberFromString:newString];
+            NSNumber *minValue = self.validation.minimumValue;
+            
+            BOOL eligibleForCompare = (newValue && minValue);
+            if (eligibleForCompare) valid = ([newValue floatValue] >= [minValue floatValue]);
+        } else {
+            valid = NO;
         }
     }
 

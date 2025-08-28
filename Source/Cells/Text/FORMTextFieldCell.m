@@ -211,6 +211,7 @@ static NSString * const FORMTooltipBackgroundColorKey = @"tooltip_background_col
     if (field.value) {
         switch (field.type) {
             case FORMFieldTypeNumber:
+            case FORMFieldTypeSignedNumber:
             case FORMFieldTypeCount: {
                 if ([field.value isKindOfClass:[NSNumber class]]) {
                     NSNumber *value = field.value;

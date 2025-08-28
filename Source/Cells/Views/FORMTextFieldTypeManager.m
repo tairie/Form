@@ -9,6 +9,7 @@
         case FORMTextFieldInputTypeUsername    : [self setupUsernameTextField:textField]; break;
         case FORMTextFieldInputTypePhoneNumber : [self setupPhoneNumberTextField:textField]; break;
         case FORMTextFieldInputTypeNumber      : [self setupNumberTextField:textField]; break;
+        case FORMTextFieldInputTypeSignedNumber: [self setupSignedNumberTextField:textField]; break;
         case FORMTextFieldInputTypeFloat       : [self setupNumberTextField:textField]; break;
         case FORMTextFieldInputTypeAddress     : [self setupAddressTextField:textField]; break;
         case FORMTextFieldInputTypeEmail       : [self setupEmailTextField:textField]; break;
@@ -52,6 +53,13 @@
     textField.autocapitalizationType = UITextAutocapitalizationTypeNone;
     textField.autocorrectionType = UITextAutocorrectionTypeNo;
     textField.keyboardType = UIKeyboardTypeNumberPad;
+    textField.secureTextEntry = NO;
+}
+
+- (void)setupSignedNumberTextField:(UITextField *)textField {
+    textField.autocapitalizationType = UITextAutocapitalizationTypeNone;
+    textField.autocorrectionType = UITextAutocorrectionTypeNo;
+    textField.keyboardType = UIKeyboardTypeNumbersAndPunctuation;
     textField.secureTextEntry = NO;
 }
 

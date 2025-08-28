@@ -28,7 +28,7 @@
             andInitialValues:(NSDictionary *)initialValues {
     self = [super initWithJSON:JSON
               andInitialValues:initialValues
-                      disabled:YES];
+                      disabled:NO];
     if (!self) return nil;
 
     [self.collectionView registerClass:[HYPImageFormFieldCell class]
@@ -138,7 +138,7 @@
     UISwitch *readOnlySwitch = [[UISwitch alloc] initWithFrame:CGRectMake(90.0f, 5.0f, 40.0f, 40.0f)];
     readOnlySwitch.tintColor = [[UIColor alloc] initWithHex:@"5182AF"];
     readOnlySwitch.onTintColor = [[UIColor alloc] initWithHex:@"5182AF"];
-    readOnlySwitch.on = YES;
+    readOnlySwitch.on = NO;
     [readOnlySwitch addTarget:self action:@selector(readOnly:) forControlEvents:UIControlEventValueChanged];
     [readOnlyView addSubview:readOnlySwitch];
 

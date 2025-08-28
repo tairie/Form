@@ -38,6 +38,10 @@
     field.type = FORMFieldTypeNumber;
     XCTAssertEqualObjects([cell rawTextForField:field], @"1");
 
+    field.value = @(-1);
+    field.type = FORMFieldTypeSignedNumber;
+    XCTAssertEqualObjects([cell rawTextForField:field], @"-1");
+    
     field.value = @1.1;
     field.type = FORMFieldTypeFloat;
     XCTAssertEqualObjects([cell rawTextForField:field], @"1.10");

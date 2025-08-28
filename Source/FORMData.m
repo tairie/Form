@@ -388,7 +388,7 @@
                 }
             }
         } else {
-            if (field.type == FORMFieldTypeNumber || field.type == FORMFieldTypeFloat || field.type == FORMFieldTypeCount) {
+            if (field.type == FORMFieldTypeNumber || field.type == FORMFieldTypeSignedNumber || field.type == FORMFieldTypeFloat || field.type == FORMFieldTypeCount) {
                 [values addEntriesFromDictionary:@{fieldID : @"0"}];
             } else {
                 [values addEntriesFromDictionary:@{fieldID : @""}];
@@ -885,7 +885,7 @@ includingHiddenFields:(BOOL)includingHiddenFields
                 for (NSString *fieldID in fieldIDs) {
 
                     id value = (self.values)[fieldID];
-                    BOOL isNumericField = (field.type == FORMFieldTypeFloat || field.type == FORMFieldTypeNumber || field.type == FORMFieldTypeCount);
+                    BOOL isNumericField = (field.type == FORMFieldTypeFloat || field.type == FORMFieldTypeNumber || field.type == FORMFieldTypeSignedNumber || field.type == FORMFieldTypeCount);
                     NSString *defaultEmptyValue = (isNumericField) ? @"0" : @"";
 
                     FORMField *targetField = [self fieldWithID:fieldID includingHiddenFields:YES];

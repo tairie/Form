@@ -12,6 +12,9 @@
 #import "NSDictionary+ANDYSafeValue.h"
 #import "ISO8601DateFormatter.h"
 
+#import "FORMNumberInputValidator.h"
+#import "FORMSignedNumberInputValidator.h"
+
 static NSString * const FORMFieldSelectType = @"select";
 static NSString * const FORMInputValidatorSelector = @"validateString:text:";
 static NSString * const FORMFormatterSelector = @"formatString:reverse:";
@@ -121,6 +124,7 @@ static NSString * const FORMFormatterSelector = @"formatString:reverse:";
 
     switch (self.type) {
         case FORMFieldTypeNumber:
+        case FORMFieldTypeSignedNumber:
         case FORMFieldTypeFloat:
         case FORMFieldTypeCount: {
             if (![fieldValue isKindOfClass:[NSString class]]) {
@@ -172,6 +176,7 @@ static NSString * const FORMFormatterSelector = @"formatString:reverse:";
             }
             return @([self.value floatValue]);
         case FORMFieldTypeNumber:
+        case FORMFieldTypeSignedNumber:
         case FORMFieldTypeCount:
             return @([self.value integerValue]);
 
@@ -253,6 +258,8 @@ static NSString * const FORMFormatterSelector = @"formatString:reverse:";
         return FORMFieldTypeFloat;
     } else if ([typeString isEqualToString:@"number"]) {
         return FORMFieldTypeNumber;
+    } else if ([typeString isEqualToString:@"signed_number"]) {
+        return FORMFieldTypeSignedNumber;
     } else if ([typeString isEqualToString:@"count"]) {
         return FORMFieldTypeCount;
     } else if ([typeString isEqualToString:@"button"]) {

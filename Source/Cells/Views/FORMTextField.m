@@ -197,6 +197,8 @@ static NSString * const FORMTextFieldPlusButtonColorKey = @"plus_button_color";
         inputType = FORMTextFieldInputTypePhoneNumber;
     } else if ([inputTypeString isEqualToString:@"number"]) {
         inputType = FORMTextFieldInputTypeNumber;
+    } else if ([inputTypeString isEqualToString:@"signed_number"]) {
+        inputType = FORMTextFieldInputTypeSignedNumber;
     } else if ([inputTypeString isEqualToString:@"float"]) {
         inputType = FORMTextFieldInputTypeFloat;
     } else if ([inputTypeString isEqualToString:@"address"]) {
